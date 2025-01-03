@@ -1,0 +1,12 @@
+main:
+	meow Hello, World!
+	meow Are you ready?(y/n)
+	lissen
+	if y den
+		goto ask name
+	bai
+	goto main
+	ask name:
+ 	meow What is your name?
+	lissen Name: \&e
+	kawl print_name
