@@ -4,6 +4,9 @@ main:
 	lissen
 	if y den
 		goto ask name
+	if yiss den
+		meow meow meow
+		goto ask name
 	bai
 	goto main
 	ask name:

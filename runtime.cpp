@@ -92,11 +92,11 @@ int main(int argc, char *argv[])
 			if(Line.rfind(" ", 0) == 0)
 			{
 				cout << Line.erase(0, 1);
-				cin >> Input;
+				getline(cin, Input);
 			}
 			else
 			{
-				cin >> Input;
+				getline(cin, Input);
 			}
 		}
 		else if(Line.rfind("if", 0) == 0)
@@ -132,6 +132,10 @@ int main(int argc, char *argv[])
 				{
 					getline(file, Line);
 					Line = trim(Line);
+					if(Line.rfind("if", 0) == 0)
+					{
+						Line = "bai";
+					}
 				}
 			}
 		}
