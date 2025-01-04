@@ -133,10 +133,6 @@ int main(int argc, char *argv[])
 				{
 					getline(file, Line);
 					Line = trim(Line);
-					if(Line.rfind("if", 0) == 0)
-					{
-						Line = "bai";
-					}
 				}
 			}
 		}
