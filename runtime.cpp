@@ -6,7 +6,7 @@
 #include <algorithm>
 #include <cctype>
 #include "linker.cpp"
-#include "var.h"
+#include "var.hpp"
 
 using namespace std;
 
@@ -53,9 +53,8 @@ int main(int argc, char *argv[])
 	ifstream file(Path);
 	string Line;
 	string Temp;
-
 	unordered_map<string, void(*)()>FunctionMap;
-	FunctionMap = Linker(FunctionMap);
+	FunctionMap = Link(FunctionMap);
 
 	if(!file.is_open())
 	{
