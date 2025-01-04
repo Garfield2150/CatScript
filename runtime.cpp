@@ -68,6 +68,8 @@ int main(int argc, char *argv[])
 		Line = trim(Line);
 
 		replace(Line, "\\&e", "");
+		replace(Line, "\\&c", Input);
+		replace(Line, "\\n", "\n");
 
 		if(Line.empty()){}
 		else if(Line.rfind("#", 0) == 0){}
