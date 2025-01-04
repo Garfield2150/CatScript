@@ -1,4 +1,4 @@
-#include "var.hpp"
+#include "../var.hpp"
 
 using namespace std;
 
